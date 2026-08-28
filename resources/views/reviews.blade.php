@@ -5,8 +5,8 @@
     <section id="testimonials" class="pt-5 mt-5 pb-5">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <span class="slbl">What People Say</span>
-                <h2 class="stitle">Our Customers <span>Feedback</span></h2>
+                <span class="slbl">Apa Kata Mereka</span>
+                <h2 class="stitle">Umpan Balik Pelanggan <span>Kami</span></h2>
                 <div class="sline"></div>
             </div>
             <div class="swiper tesSwiper" data-aos="fade-up">
@@ -16,12 +16,12 @@
                         <div class="tescard">
                             <div class="tesq">"</div>
                             <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p class="testxt">Honestly the best burgers I've ever had. The smash burger is incredible - perfectly crispy edges, juicy inside, and those pickles! We come every Friday now.</p>
+                            <p class="testxt">Burger-nya enak banget! Aku suka sekali, terutama smash burger-nya yang crispy dan juicy, aku pasti akan kembali.</p>
                             <div class="tesauth">
-                                <img src="{{ asset('img/testimonial/1.jpg') }}" alt="Monica Wilber"/>
+                                <img src="{{ asset('img/testimonial/prabowo.jpg') }}" alt="Pak Prabowo"/>
                                 <div>
-                                    <div class="tesnm">Monica Wilber</div>
-                                    <div class="tesrl">Regular Customer</div>
+                                    <div class="tesnm">Pak Prabowo</div>
+                                    <div class="tesrl">Presiden Indonesia</div>
                                 </div>
                             </div>
                         </div>
@@ -31,12 +31,12 @@
                         <div class="tescard">
                             <div class="tesq">"</div>
                             <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p class="testxt">Ordered delivery and the food arrived hot and fresh in 22 minutes. Portions are generous. Sarab has become my go-to comfort food spot without question.</p>
+                            <p class="testxt">Restoran ini sangat enak! Pelayanannya ramah dan makanannya lezat. Aku pasti akan datang lagi.</p>
                             <div class="tesauth">
-                                <img src="{{ asset('img/testimonial/2.jpg') }}" alt="Cameron Fox"/>
+                                <img src="{{ asset('img/testimonial/gibran.jpg') }}" alt="Pak Gibran"/>
                                 <div>
-                                    <div class="tesnm">Cameron Fox</div>
-                                    <div class="tesrl">Food Blogger</div>
+                                    <div class="tesnm">Pak Gibran</div>
+                                    <div class="tesrl">Wakil Presiden</div>
                                 </div>
                             </div>
                         </div>
@@ -46,12 +46,12 @@
                         <div class="tescard">
                             <div class="tesq">"</div>
                             <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p class="testxt">The truffle pasta blew my mind. I didn't expect that quality from a fast food place. Great ambiance, super friendly staff. Highly recommended!</p>
+                            <p class="testxt">Bagi saya, restoran ini adalah tempat terbaik untuk menikmati makanan lezat dan pelayanan yang sangat baik.</p>
                             <div class="tesauth">
-                                <img src="{{ asset('img/testimonial/3.jpg') }}" alt="Priya Sharma"/>
+                                <img src="{{ asset('img/testimonial/atta.jpg') }}" alt="Atta Halilintar"/>
                                 <div>
-                                    <div class="tesnm">Priya Sharma</div>
-                                    <div class="tesrl">Food Enthusiast</div>
+                                    <div class="tesnm">Atta Halilintar</div>
+                                    <div class="tesrl">Youtuber</div>
                                 </div>
                             </div>
                         </div>
@@ -61,12 +61,12 @@
                         <div class="tescard">
                             <div class="tesq">"</div>
                             <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p class="testxt">Catered our office party of 50 people and everything was flawless. Fresh, delicious, on time and well presented. Nashville chicken was the absolute star!</p>
+                            <p class="testxt">Bintang lima untuk restoran ini! Makanannya luar biasa dan pelayanannya sangat ramah.</p>
                             <div class="tesauth">
-                                <img src="{{ asset('img/testimonial/4.jpg') }}" alt="David Park"/>
+                                <img src="{{ asset('img/testimonial/anis.jpg') }}" alt="Anies Baswedan"/>
                                 <div>
-                                    <div class="tesnm">David Park</div>
-                                    <div class="tesrl">Corporate Client</div>
+                                    <div class="tesnm">Anies Baswedan</div>
+                                    <div class="tesrl">Penguasa Jakarta</div>
                                 </div>
                             </div>
                         </div>
@@ -77,3 +77,22 @@
         </div>
     </section>
 @endsection
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.tesSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      // Breakpoint agar responsif di layar besar
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+  });
+</script>

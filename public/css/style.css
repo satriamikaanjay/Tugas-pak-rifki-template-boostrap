@@ -1234,7 +1234,7 @@ section {
 
 /* ===================== HOURS ===================== */
 #hours {
-  background: linear-gradient(135deg, var(--green), #1a4a35);
+  background: linear-gradient(135deg, var(--dark), #1a274a);
   position: relative;
   overflow: hidden;
 }
@@ -1327,7 +1327,7 @@ section {
   background: #fff;
 }
 .tescard {
-  background: var(--cream);
+  background: linear-gradient(135deg, var(--dark), #1a274a);
   border-radius: 18px;
   padding: 28px;
   position: relative;
@@ -1354,7 +1354,7 @@ section {
 }
 .testxt {
   font-size: 0.88rem;
-  color: #666;
+  color: #fff;
   line-height: 1.8;
   margin-bottom: 18px;
 }
@@ -1364,8 +1364,8 @@ section {
   gap: 11px;
 }
 .tesauth img {
-  width: 46px;
-  height: 46px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--primary);
@@ -1373,9 +1373,10 @@ section {
 .tesnm {
   font-weight: 700;
   font-size: 0.88rem;
-  color: var(--dark);
+  color: white;
   margin-bottom: 1px;
   font-family: "Poppins", sans-serif;
+  
 }
 .tesrl {
   font-size: 0.73rem;
@@ -1628,7 +1629,7 @@ section {
   background: #fff;
 }
 .ctdark {
-  background: var(--dark);
+  background: linear-gradient(135deg, var(--dark), #344d90);
   border-radius: 18px;
   padding: 38px;
   height: 100%;
@@ -2434,4 +2435,28 @@ footer {
   .stitle {
     font-size: 1.8rem;
   }
+}
+
+.tesSwiper {
+    width: 100%;
+    height: auto !important; /* Memaksa tinggi menyesuaikan isi card */
+    padding-bottom: 60px !important; /* Memberikan ruang khusus untuk titik pagination di bawah card */
+}
+
+/* Memastikan wrapper dan slide tidak memanjang ke bawah tanpa alasan */
+.tesSwiper .swiper-wrapper {
+    height: auto !important;
+}
+
+.tesSwiper .swiper-slide {
+    height: auto !important; 
+    display: flex; /* Opsional: membantu jika ingin tinggi semua card sama rata */
+    justify-content: center;
+}
+
+/* Mengatur posisi titik pagination agar pas di ruang padding-bottom */
+.tesSwiper .swiper-pagination {
+    position: absolute !important;
+    bottom: 10px !important; /* Menarik titik ke atas, di dalam area padding */
+    top: auto !important;
 }
